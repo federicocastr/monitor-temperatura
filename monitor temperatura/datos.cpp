@@ -69,15 +69,15 @@ void datos::Estado () {
 	
 	string estad;
 	if(temperatura<20){
-		estad=="ENFERMO";
+		estad="ENFERMO";
 	}
 	else{
 		if(20<temperatura && temperatura<=30){
-			estad=="ESTABLE";
+			estad="ESTABLE";
 		}
 		else{
 			if(temperatura>30){
-				estad=="ENFERMO";
+				estad="ENFERMO";
 			}
 		}
 	}
