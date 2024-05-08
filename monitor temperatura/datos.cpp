@@ -100,16 +100,6 @@ void datos::maxmin () {
 		}
 	}
 	buscart.close();
-	buscarh.open("historial.txt",ios::in);
-	while(!buscarh.eof()){
-		buscarh>>a;
-		if(a>=max){
-			max=a;
-		}
-		if(a<=min){
-			min=a;
-		}
-	}
 	settempMax(max);
 	settempMin(min);
 	buscarh.close();
