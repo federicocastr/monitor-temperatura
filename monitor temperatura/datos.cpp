@@ -52,11 +52,36 @@ float datos::gettempMin ( ) {
 	return tempMin;
 }
 
-void datos::prom () {
+void datos::prom () {	
+	ifstream archivo("temperaturas.txt");
 	
+	float x,numt=0,prom=0,sum=0;
+	while (!archivo.eof()){
+		numt++;
+		archivo>>x;
+		sum+=x;
+		prom=sum/numt;
+	}
+	settemperatura(prom);	
 }
 
-void datos::Estado () {
+void datos::Estado () { 
+	
+	string estad;
+	if(temperatura<20){
+		estad=="ENFERMO";
+	}
+	else{
+		if(20<temperatura && temperatura<=30){
+			estad=="ESTABLE";
+		}
+		else{
+			if(temperatura>30){
+				estad=="ENFERMO";
+			}
+		}
+	}
+	setestado(estad);
 	
 }
 
