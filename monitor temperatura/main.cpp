@@ -24,4 +24,6 @@ int main(){
 	cout<<"informacion de temperatura de "<<puno.getnombre();
 	cout<<"la temperatura maxima registrada es de "<<puno.gettempMax()<<endl;
 	cout<<"la temperatura minima registrada es de "<<puno.gettempMin()<<endl;
+	cout<<"informacion de temperatura promedio "<<puno.gettemperatura()<<endl;
+	cout<<"informacion estado del paciente: "<<puno.getestado()<<endl;
 }
