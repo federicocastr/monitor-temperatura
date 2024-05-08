@@ -21,8 +21,8 @@ int main(){
 	system("pause");
 	system("cls");
 	puno.maxmin();
-	puno.temperatura();
-	puno.estado();
+	puno.prom();
+	puno.Estado();
 	cout<<"informacion de temperatura de "<<puno.getnombre();
 	cout<<"la temperatura maxima registrada es de "<<puno.gettempMax()<<endl;
 	cout<<"la temperatura minima registrada es de "<<puno.gettempMin()<<endl;
