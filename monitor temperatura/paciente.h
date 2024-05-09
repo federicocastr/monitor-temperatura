@@ -22,5 +22,6 @@ public:
 	int getcedula();
 	int getedad();
 	string getgenero();
+        void guardar();
 };
 #endif
