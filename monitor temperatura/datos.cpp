@@ -107,3 +107,6 @@ void datos::maxmin () {
 	historial<<max<<endl;
 	historial<<min;
 }
+void datos::guardar(){
+	
+}
