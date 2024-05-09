@@ -30,6 +30,6 @@ public:
 	void prom();
 	void Estado();
 	void maxmin();
-        void guardar();
+    	void guardar();
 };
 #endif
