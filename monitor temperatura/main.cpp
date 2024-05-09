@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 	string nom,ape,gen;
 	int ced, edad,opcion;
-	system("color 4f");
+	//system("color 4f");
 	cout << "\t====== BIENVENIDO ======" << endl ;
 	cout << "     INGRESE LOS DATOS DEL PACIENTE    " << endl;
 	cout << "Nombre: ";
