@@ -105,7 +105,7 @@ void datos::maxmin () {
 	buscarh.close();
 }
 void datos::guardar(){
-	historial.open("historial.txt");
+	historial.open("historial.txt",ios::in);
 	historial<<tempMax<<endl;
 	historial<<tempMin<<endl;
 	historial<<temperatura<<endl;
