@@ -40,5 +40,8 @@
     <Text Include="historial.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
+    <Text Include="Usuarios.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -138,6 +138,7 @@
   <ItemGroup>
     <Text Include="historial.txt" />
     <Text Include="temperaturas.txt" />
+    <Text Include="Usuarios.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
