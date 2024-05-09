@@ -44,15 +44,11 @@ int paciente::getedad(){
 string paciente::getgenero(){
 	return this->genero;
 }
-void guardar(){
-	ofstream regis("Usuarios.txt",ios::app){
+void paciente::guardar(){
+	ofstream regis("Usuarios.txt", ios::app);
 		regis<<nombre<<endl;
 		regis<<apellido<<endl;
 		regis<<cedula<<endl;
 		regis<<edad<<endl;
 		regis<<genero<<endl;
-			
-		
-	}
 }
-
