@@ -103,10 +103,11 @@ void datos::maxmin () {
 	settempMax(max);
 	settempMin(min);
 	buscarh.close();
-	historial.open("historial.txt");
-	historial<<max<<endl;
-	historial<<min;
 }
 void datos::guardar(){
-	
+	historial.open("historial.txt");
+	historial<<tempMax<<endl;
+	historial<<tempMin<<endl;
+	historial<<temperatura<<endl;
+	historial<<estado<<endl;
 }
