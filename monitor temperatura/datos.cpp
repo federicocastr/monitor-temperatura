@@ -88,22 +88,34 @@ void datos::Estado () {
 void datos::maxmin () {
 	float max=0;
 	float min=999;
-	float m,mi,t,ced;
+	int cedu;
+	float m;
+	float tmax, tmin, temp;
+	string est;
 	string d;
 	buscart.open("temperaturas.txt",ios::in);
 	while(!buscart.eof()){
-		buscart>>ced;
 		buscart >> m;
-		buscart >> mi;
-		buscart >> d;
 		if(m>=max){
 			max=m;
 		}
-		if(mi<=min){
-			min=mi;
+		if(m<=min){
+			min=m;
 		}
 	}
 	buscart.close();
+	buscarh.open("historial.txt", ios::in);
+		buscarh >> cedu;
+		buscarh >> tmax;
+		buscarh >> tmin;
+		buscarh >> temp;
+		buscarh >> est;
+		if (max >= tmax) {
+			max = tmax;
+		}
+		if (tmin <= min) {
+			min = tmin;
+	}
 	settempMax(max);
 	settempMin(min);
 }
