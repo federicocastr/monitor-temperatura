@@ -10,18 +10,18 @@ protected:
 	int edad;
 	string genero;
 public:
-	paciente();		//definir constructores
+	paciente();							//definir constructores
 	paciente(string nombre,string apellido, int cedula, int edad, string genero);
 	void setnombre(string nombre);		//setters
 	void setapellido(string apellido);
 	void setcedula(int cedula);
 	void setedad(int edad);
 	void setgenero(string genero);
-	string getnombre();		//getters
+	string getnombre();					//getters
 	string getapellido();
 	int getcedula();
 	int getedad();
 	string getgenero();
-        void guardar();
+	void guardar();						//metodos
 };
 #endif
