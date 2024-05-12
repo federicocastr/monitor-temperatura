@@ -68,16 +68,16 @@ void datos::prom () {
 void datos::Estado () { 
 	
 	string estad;
-	if(temperatura<20){
-		estad="ENFERMO";
+	if(temperatura<35){
+		estad="HIPOTERMIA";
 	}
 	else{
-		if(20<temperatura && temperatura<=30){
+		if(35<=temperatura && temperatura<=37){
 			estad="ESTABLE";
 		}
 		else{
-			if(temperatura>30){
-				estad="ENFERMO";
+			if(temperatura>37){
+				estad="FIEBRE";
 			}
 		}
 	}
