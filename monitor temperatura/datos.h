@@ -13,6 +13,7 @@ public:
 	datos();									//constructores
 	datos(string nombre,string apellido, int cedula, int edad, string genero,float temperatura,string estado,float tempMax,float tempMin);
 	datos(string nombre,string apellido, int cedula, int edad, string genero);
+	~datos();
 	void settemperatura(float temperatura);		//setters
 	void setestado(string estado);
 	void settempMax(float tempMax);

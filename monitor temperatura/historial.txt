@@ -1,7 +1,5 @@
 12
-34
+40
 30
 35
 ESTABLE
-
-ENFERMO

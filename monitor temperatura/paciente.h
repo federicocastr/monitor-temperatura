@@ -12,6 +12,7 @@ protected:
 public:
 	paciente();							//definir constructores
 	paciente(string nombre,string apellido, int cedula, int edad, string genero);
+	~paciente();
 	void setnombre(string nombre);		//setters
 	void setapellido(string apellido);
 	void setcedula(int cedula);

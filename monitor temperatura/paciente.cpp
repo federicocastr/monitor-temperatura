@@ -14,6 +14,8 @@ paciente::paciente(string nombre,string apellido, int cedula, int edad, string g
 	this->edad=edad;
 	this->genero=genero;
 }
+paciente::~paciente(){
+}
 void paciente::setnombre(string nombre){
 	this->nombre=nombre;
 }

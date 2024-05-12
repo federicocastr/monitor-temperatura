@@ -37,14 +37,15 @@
     <Text Include="temperaturas.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
-    <Text Include="historial.txt">
+    <Text Include="Usuarios.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
-    <Text Include="Usuarios.txt">
+    <Text Include="historial.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

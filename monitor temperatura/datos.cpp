@@ -20,6 +20,10 @@ datos::datos(string nombre,string apellido, int cedula, int edad, string genero)
 	:paciente(nombre,apellido,cedula,edad,genero){
 }
 
+datos::~datos()
+{
+}
+
 void datos::settemperatura (float temperatura) {
 	this->temperatura=temperatura;
 }
@@ -84,7 +88,6 @@ void datos::Estado () {
 	setestado(estad);
 	
 }
-
 void datos::maxmin () {
 	float max=0;
 	float min=999;
@@ -121,7 +124,7 @@ void datos::maxmin () {
 }
 void datos::guardar(){
 	historial.open("historial.txt",ios::in);
-	historial << cedula<<endl;
+	historial <<cedula<<endl;
 	historial<<tempMax<<endl;
 	historial<<tempMin<<endl;
 	historial<<temperatura<<endl;
