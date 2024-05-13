@@ -110,15 +110,18 @@ void datos::maxmin () {
 	buscarh.open("historial.txt", ios::in);
 		buscarh >> cedu;
 		buscarh >> tmax;
-		buscarh >> tmin;
-		buscarh >> temp;
-		buscarh >> est;
-		if (max >= tmax) {
+		if (tmax > max) {
 			max = tmax;
 		}
-		if (tmin <= min) {
-			min = tmin;
-	}
+		if (!buscarh.eof()) {
+			buscarh >> tmin;
+			buscarh >> temp;
+			buscarh >> est;
+			buscarh >> m;
+			if (tmin < min) {
+				min = tmin;
+			}
+		}
 	settempMax(max);
 	settempMin(min);
 }

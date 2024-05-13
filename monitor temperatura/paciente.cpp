@@ -47,7 +47,7 @@ string paciente::getgenero(){
 	return this->genero;
 }
 void paciente::guardar(){
-	ofstream regis("Usuarios.txt", ios::app);
+	ofstream regis("Usuarios.txt");
 		regis<<nombre<<endl;
 		regis<<apellido<<endl;
 		regis<<cedula<<endl;
