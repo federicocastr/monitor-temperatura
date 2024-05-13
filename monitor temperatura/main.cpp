@@ -29,7 +29,7 @@ int main(){
 	cout <<"La temperatura maxima registrada es de: " << puno.gettempMax()<<" Celsius"<<endl;
 	cout <<"La temperatura minima registrada es de: " << puno.gettempMin()<<" Celsius"<<endl;
 	cout <<"Temperatura promedio: " << puno.gettemperatura() <<" Celsius"<<endl;
-	cout <<"Estado del paciente: " << puno.getestado()<<endl;
+	cout <<"Estado del paciente: " << puno.getEstado()<<endl;
 	uno.guardar();
 	puno.guardar();
 	system("pause");

@@ -19,13 +19,10 @@ public:
 	void settempMax(float tempMax);
 	void settempMin(float tempMin);
 	float gettemperatura();						//getters
-	string getestado();
+	string getEstado();
 	float gettempMax();
 	float gettempMin();
-	string getEstado();							//metodos
-	int getempmax();
-	int getempmin();
-	void prom();
+	void prom();								//metodos
 	void Estado();
 	void maxmin();
     void guardar();

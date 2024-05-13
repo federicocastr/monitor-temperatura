@@ -44,15 +44,18 @@ float datos::gettemperatura ( ) {
 	return temperatura;
 }
 
-string datos::getestado ( ) {
+string datos::getEstado()
+{
 	return estado;
 }
 
-float datos::gettempMax ( ) {
+float datos::gettempMax()
+{
 	return tempMax;
 }
 
-float datos::gettempMin ( ) {
+float datos::gettempMin()
+{
 	return tempMin;
 }
 
