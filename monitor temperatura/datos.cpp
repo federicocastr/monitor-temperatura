@@ -117,14 +117,11 @@ void datos::maxmin() {
 		buscarh >> tmin;
 		buscarh >> temp;
 		buscarh >> est;
-		buscarh >> m;
-		if (cedu != 0) {
-			if (tmax > max) {
-				max = tmax;
-			}
-			if (tmin < min) {
-				min = tmin;
-			}
+		if (tmax > max) {
+			max = tmax;
+		}
+		if (tmin < min) {
+			min = tmin;
 		}
 	}
 	settempMax(max);
